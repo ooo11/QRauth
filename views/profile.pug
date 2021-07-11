@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  if(user)
+  a(href="/logout" class="btn btn-primary m-2") Logout
+  .container
+    .row.d-flex.justify-content-center
+      .col-xs-5.col-xl-5.text-center.m-5
+        if(user.google)
+        h1 Hello!
+        p= user.google.name
+        p= user.google.email
+        p= user.username
