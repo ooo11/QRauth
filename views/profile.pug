@@ -11,3 +11,18 @@ block content
         p= user.google.name
         p= user.google.email
         p= user.username
+
+    h1  📸 📸 📸
+    div
+      b Device has camera: 
+      span#cam-has-camera
+      br
+      video#qr-video
+    div
+      button#flash-toggle
+        | 📸 Flash: 
+        span#flash-state off
+    b Detected QR code: 
+    span#cam-qr-result None
+    br
+

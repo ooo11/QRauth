@@ -5,7 +5,7 @@ const helpers = require('./config/helpers.js');
 const middleware = require('./config/middleware.js');
 
 const app = require('express')();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const mongoURL = process.env.MONGODB_URI || process.env.DB_HOST;
 mongoose.Promise = global.Promise;
 

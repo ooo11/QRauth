@@ -61,11 +61,13 @@ router.get('/logout', (req, res) => {
   res.redirect('/');
 });
 
+
 router.use(function(req, res, next) {
   if (!req.route)
       return next (new Error('404'));  
   next();
 });
+
 
 
 
